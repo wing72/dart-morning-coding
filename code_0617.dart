@@ -1,21 +1,16 @@
-String findTheDifference(String s, String t) {
-  // 두 문자열의 모든 문자를 더한 후 차이를 구함
-  int charSumS = s.runes.fold(0, (sum, char) => sum + char);
-  int charSumT = t.runes.fold(0, (sum, char) => sum + char);
+int findWithLinearSearch(String haystack, String needle) {
+  if (needle.isEmpty) return 0;
   
-  // t에서 추가된 문자의 유니코드 값을 반환
-  return String.fromCharCode(charSumT - charSumS);
+  int m = haystack.length;
+  int n = needle.length;
+
+  // i를 0부터 순차적으로 탐색
+  for (int i = 0; i <= m - n; i++) {
+    // haystack의 i번째부터 n개의 문자를 잘라내어 needle과 통째로 비교
+    if (haystack.substring(i, i + n) == needle) {
+      return i; // 일치하면 즉시 반환
+    }
+  }
+
+  return -1;
 }
-
-class solution{
-  
-  List<String>;
-  
-  List<String>;
-  
-}
-
-void main({
-  list result = substract
-
-})
