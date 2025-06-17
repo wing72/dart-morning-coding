@@ -4,7 +4,6 @@ int findWithLinearSearch(String haystack, String needle) {
   int m = haystack.length;
   int n = needle.length;
 
-  // i를 0부터 순차적으로 탐색
   for (int i = 0; i <= m - n; i++) {
     // haystack의 i번째부터 n개의 문자를 잘라내어 needle과 통째로 비교
     if (haystack.substring(i, i + n) == needle) {
