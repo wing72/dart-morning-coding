@@ -1,11 +1,16 @@
-int strStr(String s, String t) {
-  if (t.isEmpty) {
-    return 0;
-  }
-  return s.indexOf(t);
-}
-
+// 여기서 별 (*)피라미드 출력
+//5단짜리
+//     *
+// 별 1 블럭 5
+//    ***
+// 별 2의 i 횟수의 곱만큼 증가 블럭 은 i만큼 감소
+//   *****
+//  *******
+// *********
+// 5번 째 블럭 1칸
 void main() {
-  print(strStr("flutterworld hello", "flutterworld"));
-  print(strStr("word", "post"));
+  int n = 6;
+  for (int i = 1; i <= 5; i++) {
+    print(" " * (n - i) + "*" * ((2 * i) - 1));
+  }
 }
