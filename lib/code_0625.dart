@@ -9,8 +9,8 @@
 // *********
 // 5번 째 블럭 1칸
 void main() {
-  int n = 5;
-  for (int i = 1; i <= n; i++) {
+  int n = 6;
+  for (int i = 1; i <= 5; i++) {
     print(" " * (n - i) + "*" * ((2 * i) - 1));
   }
 }
