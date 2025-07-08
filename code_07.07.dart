@@ -16,7 +16,7 @@ bool isAnagram(String s, String t) {
 // String t = "dog";
 
 // print(isAnagram(s, t)); // 예상 출력: false
-
+// 그냥 처봤는데 되서 매개변수에 대해서 좀더 찾아보고 적은것
 void main() {
   String s = "anagram";
   String t = "nagaram";
