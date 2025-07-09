@@ -7,9 +7,9 @@ void main() {
 }
 
 void moveZeroes(List<int> nums) {
-  int nonZeroPos = 0;
+  int nonZeroPos = 0; // 0이 아닌 요소를 저장할 위치
 
-  // 모든 비-0 요소를 배열의 앞부분으로 이동
+  // 모든 0 아닌 요소를 배열의 앞부분으로 이동
   for (int i = 0; i < nums.length; i++) {
     if (nums[i] != 0) {
       nums[nonZeroPos] = nums[i];
@@ -17,7 +17,7 @@ void moveZeroes(List<int> nums) {
     }
   }
 
- //noZeropos는 요소가 끝나는 자리이고 그 이후에는 0으로 만듬
+  //noZeropos는 요소가 끝나는 자리이고 그 이후에는 0으로 만듬
   for (int i = nonZeroPos; i < nums.length; i++) {
     nums[i] = 0;
   }
