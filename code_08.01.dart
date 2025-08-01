@@ -17,7 +17,6 @@ int factorial2(int n) {
 
 void main() {
   const n = 10;
-  final fact = factorial2(n);
   print(factorial2(n));
   print(factorial1(n));
 }
